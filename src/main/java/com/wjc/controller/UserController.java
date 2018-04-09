@@ -33,4 +33,11 @@ public class UserController {
         return userService.findAllUser();
     }
 
+
+    @ResponseBody
+    @RequestMapping(value = "/test", produces = {"application/json;charset=UTF-8"})
+    public Object test(){
+        return "hello world";
+    }
+
 }
